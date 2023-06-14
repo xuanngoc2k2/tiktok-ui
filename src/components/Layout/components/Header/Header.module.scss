@@ -15,9 +15,17 @@
     width: var(--default-layout-width);
     justify-content: space-between;
 }
-
-.search {
+.search,
+.search-result {
     width: 361px;
+}
+.search-title {
+    color: rgba(22, 24, 35, 0.5);
+    font-style: 1.4rem;
+    padding: 5px 12px;
+    font-weight: 600;
+}
+.search {
     height: 46px;
     display: flex;
     border: 1.5px solid transparent;
