@@ -26,6 +26,8 @@ import {
 import AccountItem from '~/components/AccountItem';
 import Button from '~/components/Button';
 import Menu from '~/components/Poper/Menu';
+import { MailIcon, MessageIcon } from '~/components/Icons';
+import Image from '~/components/Images';
 
 const cx = classNames.bind(styles);
 
@@ -130,7 +132,10 @@ function Header() {
                                 </button>
                             </Tippy>
                             <button className={cx('action-btn')}>
-                                <FontAwesomeIcon icon={faMessage} />
+                                <MessageIcon />
+                            </button>
+                            <button className={cx('action-btn')}>
+                                <MailIcon />
                             </button>
                         </>
                     ) : (
@@ -141,9 +146,10 @@ function Header() {
                     )}
                     <Menu items={currentUser ? MENU_USER : MENU_ITEMS} onChange={handleOnChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/029195a30e2b1ea65610f9ffbb5003ef~c5_100x100.jpeg?x-expires=1686942000&x-signature=Llh8U9F5VpCWgZgvnSaU9kOFcdI%3D"
+                                // fallback="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/c2a875e2deafafa898ddd5fdd6cdb971~c5_100x100.jpeg?x-expires=1687543200&x-signature=m3VCruw8xzGTFB%2FDF9D417ZPzWw%3D"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
