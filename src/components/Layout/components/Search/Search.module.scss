@@ -23,6 +23,7 @@
         caret-color: var(--primary);
         height: 100%;
         background-color: transparent;
+        font-family: var(--font-family);
     }
     input:not(:placeholder-shown) ~ .search-btn {
         color: rgba(22, 24, 35, 0.75);

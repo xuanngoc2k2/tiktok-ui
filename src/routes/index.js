@@ -4,13 +4,14 @@ import Upload from '~/pages/Upload';
 import { HeaderOnly } from '~/components/Layout';
 import Search from '~/pages/Search';
 import Profile from '~/pages/Profile';
+import routesConfig from '~/config/routes';
 
 const publicRoutes = [
-    { path: '/', conponent: Home },
-    { path: '/following', conponent: Following },
-    { path: '/:nickname', conponent: Profile },
-    { path: '/search', conponent: Search, layout: null },
-    { path: '/upload', conponent: Upload, layout: HeaderOnly },
+    { path: routesConfig.home, conponent: Home },
+    { path: routesConfig.following, conponent: Following },
+    { path: routesConfig.profile, conponent: Profile },
+    { path: routesConfig.search, conponent: Search, layout: null },
+    { path: routesConfig.upload, conponent: Upload, layout: HeaderOnly },
 ];
 
 const privateRoutes = [];

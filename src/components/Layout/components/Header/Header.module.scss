@@ -16,6 +16,10 @@
     width: var(--default-layout-width);
     justify-content: space-between;
 }
+
+.logo-link {
+    display: flex;
+}
 //Actions
 .action {
     display: flex;
