@@ -4,8 +4,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
-
+    position: fixed;
+    top: 0;
+    left: 0;
     --search-boder-radius: 92px;
+    background-color: var(--white);
 }
 
 .inner {
