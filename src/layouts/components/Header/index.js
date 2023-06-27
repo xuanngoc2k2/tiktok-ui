@@ -232,6 +232,7 @@ function Header() {
     const handleOnChange = (menuItem) => {
         console.log(menuItem);
     };
+    // eslint-disable-next-line no-sparse-arrays
     const MENU_USER = [
         {
             icon: <FontAwesomeIcon icon={faUser} />,
